@@ -24,4 +24,5 @@ Rails.application.routes.draw do
   end
 
   resources :notes
+  resource :calendar
 end

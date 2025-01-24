@@ -1,10 +1,11 @@
 = turbo_frame_tag 'page-content' do
   = render LayoutComponent.new do |layout|
     - layout.with_middle do
-      .h1 Notes
+      .container.py-3
+        .h1 Notes
 
-      = link_to 'New', new_note_path, class: 'btn btn-primary'
-      - @notes.each do |note|
-        .border-top.d-flex.justify-content-between
-          = note.title
-          = link_to 'Edit', edit_note_path(note)
+        = link_to 'New', new_note_path, class: 'btn btn-primary'
+        - @notes.each do |note|
+          .border-top.d-flex.justify-content-between
+            = note.title
+            = link_to 'Edit', edit_note_path(note)
