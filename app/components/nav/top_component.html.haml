@@ -1,1 +1,4 @@
-%div Add Nav::Top template here
+.d-flex.gap-3.border-bottom.w-100.p-3.justify-content-start
+  = render Ui::ButtonComponent.new(variant: 'link', data: {bs_toggle: "offcanvas", bs_target: "#menudrawer"}, class: 'btn btn-circle border') do
+    %span{style: 'transform: scale: 120%'}
+      = render IconComponent.new 'list', width: 24

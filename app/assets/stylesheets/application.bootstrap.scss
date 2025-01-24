@@ -12,3 +12,5 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import 'bootstrap-icons/font/bootstrap-icons';
 
 @import 'layout';
+@import 'actiontext';
+@import 'button';

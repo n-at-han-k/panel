@@ -1,1 +1,3 @@
-%div Add Nav::Drawer template here
+= render Ui::OffcanvasComponent.new placement: 'start', id: 'menudrawer' do |offcanvas|
+  - offcanvas.with_header(text: "Left Offcanvas") 
+  - offcanvas.with_body.with_content("Content for the offcanvas goes here.") 

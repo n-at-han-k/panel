@@ -1,0 +1,6 @@
+= turbo_frame_tag 'page-content' do
+  = render LayoutComponent.new do |layout|
+    - layout.with_middle do
+      .h1= @note.title
+
+      = @note.content

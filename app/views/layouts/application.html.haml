@@ -32,15 +32,7 @@
           = render Nav::LeftComponent.new
 
         = turbo_frame_tag 'page-content' do
-
-          #content-left
-            = yield :content_left
-
-          #content-middle
-            = yield :content_middle
-
-          #content-right
-            = yield :content_right
+          = yield
 
       #page-bottom
         = render Nav::BottomComponent.new
