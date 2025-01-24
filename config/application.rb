@@ -23,5 +23,11 @@ module RailsStarter
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.public_file_server.headers = {
+      'Cross-Origin-Opener-Policy'   => 'same-origin',
+      'Cross-Origin-Embedder-Policy' => 'require-corp'
+    }
+
   end
 end

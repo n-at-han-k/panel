@@ -18,8 +18,8 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags 
     %meta{name: "viewport", content: "width=device-width,initial-scale=1"}
-    %script
-      window.process = { env: { NODE_ENV: 'development' }}
+    =#%script{src: asset_path('sqlite3.js')}
+
   %body
     = render Nav::DrawerComponent.new
     = turbo_frame_tag 'panel' do

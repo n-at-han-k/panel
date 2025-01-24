@@ -10,3 +10,5 @@ pin "bootstrap", to: "bootstrap.esm.js" # 5.3.2
 pin "@popperjs/core", to: "popperjs-core.esm.js" # @2.11.8
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
+
+pin "@sqlite.org/sqlite-wasm", to: "@sqlite.org--sqlite-wasm.js" # @3.48.0
