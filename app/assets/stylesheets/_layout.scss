@@ -5,6 +5,8 @@ body {
 
 #panel {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   #page-top {
   }
@@ -15,7 +17,7 @@ body {
     display: grid;
     grid-template-areas: 'content-left content-middle content-bottom';
     grid-template-columns: auto minmax(0, 1fr);
-    height: 100%;
+    //height: 100%;
 
     #page-left {
     }
