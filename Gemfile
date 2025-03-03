@@ -8,7 +8,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
-gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.14"
 gem "bootsnap", require: false
 gem "solid_cache"
 gem "solid_queue"
