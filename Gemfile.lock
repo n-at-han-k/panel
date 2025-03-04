@@ -227,6 +227,11 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     ostruct (0.6.1)
+    overmind (2.5.1)
+    overmind (2.5.1-aarch64-linux)
+    overmind (2.5.1-arm-linux)
+    overmind (2.5.1-arm64-darwin)
+    overmind (2.5.1-x86_64-darwin)
     parallel (1.26.3)
     parser (3.3.6.0)
       ast (~> 2.4.1)
@@ -434,6 +439,7 @@ DEPENDENCIES
   jbuilder
   kamal
   lookbook (~> 2.3)
+  overmind (~> 2.5)
   propshaft
   puma (>= 5.0)
   pundit (~> 2.4)
