@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 web: env RUBY_DEBUG_OPEN=true bin/rails s
+=======
+web: env RUBY_DEBUG_OPEN=true bin/rails server
+>>>>>>> e601ce3 (Revert ".")
 css: yarn watch:css
