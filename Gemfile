@@ -61,3 +61,5 @@ gem "overmind", "~> 2.5"
 gem "cssbundling-rails", "~> 1.4"
 
 gem "honeybadger", "~> 5.26"
+
+gem "omniauth-google-oauth2", "~> 1.2"
