@@ -1,0 +1,7 @@
+clang
+libfontconfig1
+fontconfig
+libfontconfig1-dev
+libfontconfig
+tesseract-ocr
+libtesseract-dev
