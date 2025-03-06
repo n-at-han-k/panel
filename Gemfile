@@ -55,3 +55,5 @@ gem "lookbook", "~> 2.3"
 gem "simple_form", "~> 5.3"
 
 gem "overmind", "~> 2.5"
+
+gem "cssbundling-rails", "~> 1.4"

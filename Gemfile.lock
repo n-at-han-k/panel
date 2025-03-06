@@ -99,6 +99,8 @@ GEM
     crass (1.0.6)
     css_parser (1.21.0)
       addressable
+    cssbundling-rails (1.4.3)
+      railties (>= 6.0.0)
     date (3.4.1)
     debug (1.10.0)
       irb (~> 1.10)
@@ -400,6 +402,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   capybara
+  cssbundling-rails (~> 1.4)
   debug
   devise (~> 4.9)
   haml-rails (~> 2.1)
