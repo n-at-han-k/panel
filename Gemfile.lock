@@ -250,6 +250,9 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
+    pg (1.5.9)
+    postgresql (1.0.0)
+      pg
     propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -457,6 +460,7 @@ DEPENDENCIES
   lookbook (~> 2.3)
   omniauth-google-oauth2 (~> 1.2)
   overmind (~> 2.5)
+  postgresql (~> 1.0)
   propshaft
   puma (>= 5.0)
   pundit (~> 2.4)

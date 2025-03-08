@@ -18,8 +18,7 @@
     "build:css": "yarn build:css:compile && yarn build:css:prefix",
 
     "watch:css": "nodemon --watch ./app/assets/stylesheets/ --ext scss --exec \"yarn watch:css:compile\"",
-    "watch:css:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
-    "watchold:css:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules --silence-deprecation=mixed-decls,color-functions,import,color-4-api,global-builtin"
+    "watch:css:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules --silence-deprecation=mixed-decls,color-functions,import,color-4-api,global-builtin"
   },
   "browserslist": [
     "defaults"
