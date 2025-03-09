@@ -47,21 +47,17 @@ group :test do
   gem "selenium-webdriver"
 end
 
-#gem "cssbundling-rails", "~> 1.4"
-
 gem "haml-rails", "~> 2.1"
 gem "view_component", "~> 3.21"
 gem "pundit", "~> 2.4"
 gem "devise", "~> 4.9"
 gem "lookbook", "~> 2.3"
 gem "simple_form", "~> 5.3"
-
 gem "overmind", "~> 2.5"
-
 gem "cssbundling-rails", "~> 1.4"
-
 gem "honeybadger", "~> 5.26"
-
-gem "omniauth-google-oauth2", "~> 1.2"
-
 gem "postgresql", "~> 1.0"
+
+gem "omniauth", "~> 2.1"
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "omniauth-google-oauth2", "~> 1.2"

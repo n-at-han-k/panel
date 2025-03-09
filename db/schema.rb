@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_03_06_023057) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_09_082347) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+  enable_extension "pgcrypto"
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
     t.integer "status", default: 0, null: false
@@ -63,6 +64,24 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_06_023057) do
 
   create_table "notes", force: :cascade do |t|
     t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "role", force: :cascade do |t|
+    t.bigint "team_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_role_on_team_id"
+    t.index ["user_id"], name: "index_role_on_user_id"
+  end
+
+  create_table "teams", id: false, force: :cascade do |t|
+    t.string "team_id"
+    t.string "name"
+    t.uuid "uuid", default: -> { "gen_random_uuid()" }
+    t.string "url_slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

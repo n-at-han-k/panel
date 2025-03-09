@@ -6,14 +6,35 @@
 #
 default: &default
   adapter: postgresql
+  encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
-  <<: *default
-  database: nathan_panel_rails
-  username: postgres
-  password: postgres
+  primary:
+    <<: *default
+    database: nathan_panel_rails
+    username: postgres
+    password: postgres
+
+  cache:
+    <<: *default
+    database: nathan_panel_rails
+    username: postgres
+    password: postgres
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *default
+    database: nathan_panel_rails
+    username: postgres
+    password: postgres
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *default
+    database: nathan_panel_rails
+    username: postgres
+    password: postgres
+    migrations_paths: db/cable_migrate
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

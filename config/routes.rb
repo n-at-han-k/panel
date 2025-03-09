@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     passwords:      'user/passwords',
     registrations:  'user/registrations',
     unlocks:        'user/unlocks',
+    omniauth_callbacks: 'auth',
     # invitations:    'user/invitations' # Devise Invitable Gem
   }
 
@@ -25,4 +26,9 @@ Rails.application.routes.draw do
 
   resources :notes
   resource :calendar
+
+  scope '/app' do
+    namespace :webhooks do
+    end
+  end
 end
