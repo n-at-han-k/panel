@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     passwords:      'user/passwords',
     registrations:  'user/registrations',
     unlocks:        'user/unlocks',
-    omniauth_callbacks: 'auth',
+    omniauth_callbacks: 'user/omniauth_callbacks',
     # invitations:    'user/invitations' # Devise Invitable Gem
   }
 
