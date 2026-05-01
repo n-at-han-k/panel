@@ -1,5 +1,7 @@
 # README
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/n-at-han-k/panel)
+
 - [x] [Vim gitignore](https://github.com/github/gitignore/blob/main/Global/Vim.gitignore)
 - [x] Bootstrap (cssbundling-rails)
 - [x] SASS      (cssbundling-rails)
